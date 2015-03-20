@@ -23,4 +23,6 @@ if (Meteor.isClient) {
 
   });
 
+  // Client side configurations
+
 }
