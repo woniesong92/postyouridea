@@ -1,15 +1,13 @@
-// Router.configure({
-//   layoutTemplate: 'ApplicationLayout'
-// });
+Router.configure({
+  layoutTemplate: 'Layout'
+});
 
-// Router.route('/', function () {
-//   // render the Post template into the "main" region
-//   // {{> yield}}
-//   // this.render('Post');
-
-//   this.render('MainIndex', {to: 'content'});
+Router.route('/', function () {
+  // render the Post template into the "main" region
+  // {{> yield}}
+  this.render('Main', {to: 'content'}); // Yield Main template to where {{> yield "content"}} is in layout.html
   
-// });
+});
 
 // Router.route('/upload', function () {
 //   this.render('Upload', {to: 'content'});
